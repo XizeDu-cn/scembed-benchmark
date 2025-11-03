@@ -1,0 +1,24 @@
+# 基本输入
+scenario: Cell_line_mixing
+adata: /Volumes/samsung/code/py_benchmark/adata_merge.h5ad
+label_key: cell_type
+batch_key: batch
+obsm_keys: [
+    cellspace, gfetm, scbasset, simba,
+    poisson_batch, poisson_nobatch,
+    gfetm_correct, gfetm_code, gfetm_code_normal,gfetm_nll_balance,gfetm_nll_nobalance,
+    gfetm_poisson_balance,gfetm_poisson_nobalance,gfetm_poisson_nobalance_all
+]
+# obsm_keys: [cellspace, gfetm, scbasset, simba,gfetm_correct,gfetm_code_normal]
+# 运行参数
+seeds: [0, 2]
+n_neighbors: 15
+select_metric: ARI
+output_dir: /Volumes/samsung/code/py_benchmark/results
+
+# 分辨率：可二选一
+# 1) 显式列表（示例：覆盖到2.0，每0.02）
+# resolutions: [0.02, 0.04, 0.06, ..., 2.00]
+
+# 2) 网格表达式（推荐，覆盖到2.0）
+res_grid: "0.02:2.00:0.08"

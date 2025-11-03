@@ -1,0 +1,46 @@
+# 结果目录
+results/
+
+# Snakemake工作目录
+.snakemake/
+
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# R相关
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+Rplots.pdf
+
+# 大数据文件
+*.h5ad
+
+# 临时输出文件
+adata_obs.csv
+adata_merge.h5ad
+
+# 日志文件
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
